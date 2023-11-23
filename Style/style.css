@@ -1,0 +1,276 @@
+.parallax {
+    height: 500px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 60px;
+    align-items: center;
+    position: relative;
+}
+.parallax .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    z-index: 2;
+}
+.parallax h1 {
+    z-index: 3;
+}
+
+.main-info-zag {
+	text-align: center;
+	color: white;
+	font-size: 30px;
+
+}
+
+.main-info p {
+	font-size: 20px;
+	color: white;
+	margin-left: 10px;
+}
+
+.about-min-block {
+	width: 48%;
+	float: left;
+	height: 400px;
+	border:3px solid;
+	border-radius: 10px;
+	border-color: #222831;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background: #393E46;
+	text-align: center;
+	line-height: 30px;
+}
+
+.footer {
+	width: 100%;
+	float: left;
+	height: 50px;
+	border: 0px solid;
+	border-radius: 0px;
+	border-color: #222831;
+	margin-top: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background: #393E46;
+	text-align: center;
+	line-height: 30px;
+}
+
+
+a.Black-Opium {	
+	color: #F9ED69;
+	font-size: 30px;
+}
+
+a.Black-Opium:hover {
+	color: #F08A5D;
+	transition: 1.5s;	
+}
+
+
+.underline-one {
+	color: white; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+
+}
+.underline-one:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: white; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.underline-one:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+ 
+.main-info { 
+	width: 100%;
+	margin: 0 auto;/*центрируем ее*/ 	
+	background: #252A34; 
+	height: 10px;/*Задаем высоту обертки*/ } 
+ 
+.main-info:last-child { margin-right: 0px;/*Убираем поле последнего div-а*/ }
+
+body {
+	font-family: Roboto;
+	margin: 0px;
+	background-color: #252A34;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:0px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+}
+
+.item-main-settings {
+	width: 31%;
+	float: left;
+	height: 350px;
+	border:3px solid;
+	border-radius: 10px;
+	border-color: #222831;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 15px;
+	background: #393E46;
+	text-align: center;
+	line-height: 30px;
+	opacity: .99;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	-webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item-main-settings:before {
+  content: '';
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 3) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 3) 100%);
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.item-main-settings .caption {
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  text-align: center;
+}
+.item-main-settings .caption span {
+  display: block;
+  opacity: 0;
+  position: relative;
+  top: 150px;
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.item-main-settings .caption .title {
+  line-height: 1;
+  font-weight: normal;
+  font-size: 20px;
+}
+.item-main-settings .caption .info {
+  line-height: 1.2;
+  margin-top: 5px;
+  margin-right: 30px;
+  font-size: 12px;
+}
+.item-main-settings:focus:before,
+.item-main-settings:focus span, .item-main-settings:hover:before,
+.item-main-settings:hover span {
+  opacity: 1;
+}
+.item-main-settings:focus:before, .item-main-settings:hover:before {
+  top: 50%;
+}
+.item-main-settings:focus span, .item-main-settings:hover span {
+  top: 0;
+}
+.item-main-settings:focus .title, .item-main-settings:hover .title {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+.item-main-settings:focus .info, .item-main-settings:hover .info {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.underline-two {
+	color: white; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+
+}
+.underline-two:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.underline-two:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
