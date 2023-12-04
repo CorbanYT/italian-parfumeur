@@ -152,16 +152,17 @@ li a:hover:not(.active) {
     background-color: red;
 }
 
-.item-main-settings {
-	width: 31%;
+/*.item-main-settings {
+	width: 48%;
+  display: inline-block;
 	float: left;
-	height: 350px;
+	height: 600px;
 	border:3px solid;
 	border-radius: 10px;
 	border-color: #222831;
-	margin-top: 20px;
-	margin-left: 10px;
-	margin-right: 15px;
+	margin-top: 30px;
+	margin-left: auto;
+  margin-right: auto;
 	background: #393E46;
 	text-align: center;
 	line-height: 30px;
@@ -172,6 +173,34 @@ li a:hover:not(.active) {
 	-webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 	-moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 	box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+} */ 
+
+.item-main-settings {
+  display: inline-block;
+  text-align: center;
+  padding: auto;
+  width: 32%;
+  height: 500px;
+  margin: auto;
+  margin-right: 7px;
+  margin-left: 7px;
+  margin-top: 7px;
+  justify-content: center;
+  
+  border:3px solid;
+  border-radius: 10px;
+  border-color: #222831;
+  background: #393E46;
+  text-align: center;
+  line-height: 30px;
+  opacity: .99;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .item-main-settings:before {
@@ -224,6 +253,58 @@ li a:hover:not(.active) {
   margin-right: 30px;
   font-size: 12px;
 }
+
+@media (max-width: 1280px) { 
+  .active {background-color: green;}
+  .item-main-settings {
+    width: 31%;
+    height: 300px;
+    margin-right: 12px;
+  }
+  .underline-one {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1024px) { 
+  .active {background-color: orange;}
+  .item-main-settings {
+    width: 30%;
+    height: 300px;
+    margin-right: 10px;
+    margin-left: 14px;
+  }
+  .underline-one {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) { 
+  .active {background-color: olive;}
+  .item-main-settings {
+    width: 47%;
+    height: 300px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .underline-one {font-size: 60px;}
+  .about-min-block {width: 60%}
+}
+
+@media (max-width: 360px) { 
+  .active {background-color: pink;}
+  .item-main-settings {
+    width: 45%;
+    height: 150px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .underline-one {
+    font-size: 40px;
+  }
+}
+
+
 .item-main-settings:focus:before,
 .item-main-settings:focus span, .item-main-settings:hover:before,
 .item-main-settings:hover span {
@@ -249,6 +330,8 @@ li a:hover:not(.active) {
     position: relative;
     cursor: pointer;
     text-decoration: none; /* Убираем подчеркивание */
+
+
 
 }
 .underline-two:after {
