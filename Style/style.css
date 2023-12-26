@@ -213,7 +213,7 @@ li a:hover:not(.active) {
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 2;
+  z-index: 1;
   -webkit-transition-property: top, opacity;
   transition-property: top, opacity;
   -webkit-transition-duration: 0.3s;
@@ -274,9 +274,7 @@ li a:hover:not(.active) {
     margin-right: 10px;
     margin-left: 14px;
   }
-  .underline-one {
-    font-size: 60px;
-  }
+  .underline-one { font-size: 60px; }
 }
 
 @media (max-width: 768px) { 
@@ -298,10 +296,22 @@ li a:hover:not(.active) {
     height: 150px;
     margin-right: 5px;
     margin-left: 5px;
-    font-size: 5px;
+    font-size: 7px;
   }
-  .underline-one {
-    font-size: 20px;
+  .underline-one {font-size: 40px;}
+  .item-main-settings .caption .info {
+    font-size: 8px;
+    margin-right: 30px;
+  }
+  
+  .item-main-settings .caption .title {
+    font-size: 10px;
+    margin-right: 30px;
+    line-height: -5px;
+  }
+  
+  .parallax {
+    height: 80px;
   }
 }
 
