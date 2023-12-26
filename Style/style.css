@@ -298,6 +298,7 @@ li a:hover:not(.active) {
     height: 150px;
     margin-right: 5px;
     margin-left: 5px;
+    font-size: 5px;
   }
   .underline-one {
     font-size: 40px;
